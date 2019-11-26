@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>SimpleStockGrapher2</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/ramda/0.24.1/ramda.min.js'></script>
+  <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+  <script src="./index.js"></script>
+</head>
+<body>
+
+<div id='wrapper'>
+  <img id="loader" src="http://s3.india.com/wp-content/uploads/2014/07/ajax-loader.gif" height="200" width="200"/>
+  <div id='inputs'>
+    <input value="AMZN" />
+    <select>
+      <option value="1min">1min</option>
+      <option value="5min" selected>5min</option>
+      <option value="Daily">Daily</option>
+      <option value="Weekly">Weekly</option>
+      <option value="Monthly">Monthly</option>
+    </select>
+    <button id='get-symbol'>Get Symbol</button>
+  </div>
+  <div id='header'>
+    <h2>
+      AMZN 
+      <span class='unbold'>&nbsp;&ndash;&nbsp;</span> 
+      00.0000 
+      <span class='unbold'>&nbsp;&ndash;&nbsp;</span> 
+      <span class='smaller'>Last Updated @ 00:00:00</span>
+    </h2>
+  </div>
+  <div id='graph'></div>
+  <div id='content'>
+    <h2 class='unbold divider'>Prices (open, high, low, close) and Volumes</h2>
+  </div>
+</div>
+
+</body>
+</html>
